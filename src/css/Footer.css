@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: linear-gradient(180deg, #ffffff, #dc9f7e, #874421);
+    color: white;
+    
+    width: 100%;
+    height: fit-content;
+    
+    margin-inline: auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    bottom: 0;
+}

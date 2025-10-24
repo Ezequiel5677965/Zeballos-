@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.glosario-container {
+background-color: #2c3e50;
+color: #f5f5f5;
+padding: 3rem;
+border-radius: 1rem;
+box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+line-height: 1.7;
+}
+
+/* === Encabezado principal === */
+.glosario-container h1 {
+color: #ffb100;
+text-align: center;
+margin-bottom: 2rem;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+/* === Secciones del glosario === */
+.glosario-container section {
+margin-bottom: 2.5rem;
+padding: 1.5rem;
+background: #34495e;
+border-left: 6px solid #ff8000;
+border-radius: 0.5rem;
+}
+
+/* === Títulos de sección === */
+.glosario-container h2 {
+color: #ffb100;
+margin-bottom: 1rem;
+}
+
+/* === Listas === */
+.glosario-container ul {
+list-style-type: disc;
+padding-left: 2rem;
+}
+
+.glosario-container li {
+margin-bottom: 0.8rem;
+}
+
+.glosario-container strong {
+color: #ff8000;
+}
+
+/* === Hover en elementos === */
+.glosario-container li:hover {
+color: #ffb100;
+transition: color 0.3s ease;
+}
+
+.faq-container {
+    color: #f5f5f5;
+}
+
+.faq-container ol {
+list-style: none;
+padding-left: 0;
+}
+
+.faq-container li {
+margin-bottom: 2rem;
+padding: 1.5rem;
+background: #34495e;
+border-left: 6px solid #ff8000;
+border-radius: 0.5rem;
+}
+
+/* === Títulos de preguntas === */
+.faq-container h2 {
+color: #ffb100;
+margin-bottom: 0.5rem;
+}
+
+/* === Listas dentro de respuestas === */
+.faq-container ul, .faq-container ol {
+padding-left: 2rem;
+margin-top: 0.5rem;
+}
+
+.faq-container li li {
+color: #f5f5f5;
+margin-bottom: 0.4rem;
+}
+
+/* === Resaltado y bloque de citas === */
+.faq-container strong {
+color: #ff8000;
+}
+
+.faq-container blockquote {
+background-color: #263646;
+border-left: 4px solid #ffb100;
+margin: 1rem 0;
+padding: 1rem;
+border-radius: 0.3rem;
+color: #f0f0f0;
+font-style: italic;
+}
+
+/* === Efecto hover === */
+.faq-container li:hover {
+background-color: #3d566e;
+transition: background-color 0.3s ease;
+}

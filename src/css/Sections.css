@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #4b9ce2;
+    padding-left: 0.6rem;
+}
+
+.content h3 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content h4 {
+    font-size: 1.2rem;
+    color: #5d6d7e;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Listas generales */
+.content ul,
+.content ol {
+    margin: 0 0 1rem 1.5rem;
+    padding-left: 1rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* Estilo visual para listas ordenadas */
+.content ol {
+    counter-reset: item;
+    list-style: none;
+}
+
+.content ol > li {
+    counter-increment: item;
+}
+
+.content ol > li::before {
+    content: counter(item) ".";
+    color: #4b9ce2;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+
+/* Estilo visual para listas no ordenadas */
+.content ul {
+    list-style: none;
+    padding-left: 1.2rem;
+}
+
+.content ul li::before {
+    content: "•";
+    color: #4b9ce2;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+/* Ejemplos en negrita */
+.content strong {
+    color: #1a5276;
+    font-weight: 600;
+}
+
+.content a {
+    color: #4b9ce2;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* ──────── CUADROS DESTACADOS ──────── */
+.content .card-tip,
+.content .card-warning,
+.content .card-info,
+.content .card-example {
+    padding: 1rem 1.2rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-right: 6px solid;
+}
+
+/* Tip verde */
+.content .card-tip {
+    background: #e9f9f0;
+    border-color: #27ae60;
+    color: #14532d;
+}
+
+/* Advertencia / Warning */
+.content .card-warning {
+    background: #fff7e6;
+    border-color: #f39c12;
+    color: #7a4f00;
+}
+
+/* Info azul */
+.content .card-info {
+    background: #e8f4fd;
+    border-color: #3498db;
+    color: #1b4f72;
+}
+
+/* Ejemplo gris */
+.content .card-example {
+    background: #f4f6f7;
+    border-color: #95a5a6;
+    color: #424949;
+}
+
+/* Títulos internos dentro del card */
+.content .card-tip h4,
+.content .card-warning h4,
+.content .card-info h4,
+.content .card-example h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Listas dentro de cards */
+.content .card-tip ul,
+.content .card-warning ul,
+.content .card-info ul,
+.content .card-example ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+
+    .content h3 {
+        font-size: 1.2rem;
+    }
+
+    .content h4 {
+        font-size: 1rem;
+    }
+}
