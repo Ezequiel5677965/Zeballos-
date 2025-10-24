@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Inicio from './pages/Inicio';
 import GCS from './pages/GCS';
 import PDesarrollo from './pages/PDesarrollo';
@@ -9,7 +8,8 @@ import Glosario from './pages/Glosario';
 import Preguntas from './pages/Preguntas';
 import About from './pages/about';
 import Buscador from './components/Buscador';
-import ComAnaliza from './pages/ComAnaliza'
+import ComAnaliza from './pages/ComAnaliza';
+import Contactos from './pages/contactos';
 // import Compara from './pages/Compara';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/Kanban" element={<KANBAN />} />
         <Route path="/Glosario" element={<Glosario />} />
         <Route path="/Preguntas" element={<Preguntas />} />
+        <Route path="/Contact" element={<Contactos/>}/>
       </Routes>
     </Router>
   );
