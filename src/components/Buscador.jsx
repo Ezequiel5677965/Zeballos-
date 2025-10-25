@@ -11,12 +11,13 @@ const Buscador = () => {
     const paginas = [
     { nombre: "Inicio", ruta: "/" },
     { nombre: "G.C.S", ruta: "/GCS" },
-    { nombre: "PDesarrollo", ruta: "/PDesarrollo" },
+    { nombre: "Procesos de Desarrollo", ruta: "/PDesarrollo" },
     { nombre: "SCRUM", ruta: "/SCRUM" },
     { nombre: "Kanban", ruta: "/Kanban" },
     { nombre: "Glosario", ruta: "/Glosario" },
     { nombre: "Preguntas", ruta: "/Preguntas" },
-    { nombre: "About", ruta: "/about" },
+    { nombre: "Informacion", ruta: "/about" },
+    { nombre: "Contactos", ruta: "/Contact" },
     ];
 
   // Maneja lo que el usuario escribe
